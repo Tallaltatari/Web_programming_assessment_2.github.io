@@ -1,0 +1,260 @@
+<html>
+<head>
+    <!-- Title of the HTML page -->
+    <title>Genshin Impact</title>
+    <script src="https://kit.fontawesome.com/74e2056708.js" crossorigin="anonymous"></script>
+    <!-- Internal CSS styling -->
+    <style>
+        .menu {
+            overflow: hidden;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .menu a {
+            float: none;
+            color: whitesmoke;
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu a:hover {
+            background-color: aliceblue;
+            color: black;
+        }
+        .a {
+            float: none;
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        #h2 {
+            padding-bottom: 10px;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        #section {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        #body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            background-image: url("Game_Features_background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+        .p {
+            font-size: large;
+            color: whitesmoke;
+            text-align: center;
+            padding-left: 30px;
+            line-height:20px;
+        }
+        #header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            top: 0;
+            height: 60px;
+            opacity: 0.8;
+            padding-left: 150px;
+        }
+        .logo {
+            width: 150px;
+            height: 60px;
+        }
+        .aside1 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 330px;
+            padding-right: 50px;
+            text-align: justify;
+            float: right;
+            font-style: bold;
+            background-color:  #172d67;
+            color: white;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .aside2 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 330px;
+            padding-right: 50px;
+            text-align: justify;
+            float: left;
+            font-style: bold;
+            background-color:  #172d67;
+            color: white;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .h3 {
+            text-align: center;
+            font-size: 22px;
+            padding-left: 35px;
+        }
+        .video_container_right {
+            width: 60%;
+            height:65%;
+            float: right;
+            object-fit: cover;
+            padding-bottom: 40px;
+            
+        }
+        .video_container_left {
+            width: 60%;
+            height:65%;
+            float: left;
+            object-fit: cover;
+            padding-bottom: 40px;
+            
+        }
+        footer {
+            color:#676767;
+            font-family: monospace;
+            margin-top: auto;
+            padding: 0px;
+            text-align: center;
+            background: #141414;
+            bottom: 0;
+        }
+        .tw, .fb, .ig {
+            color:#676767;
+            display: inline-block;
+            font-size: 40px;
+        }
+        .ig:hover {
+            color:#eb797b;
+            cursor:pointer;
+        }
+        .fb:hover {
+            color:#39569c;
+            cursor:pointer;
+        }
+        .tw:hover {
+            color:#00acee;
+            cursor:pointer;
+        }
+        .hecho {
+            font-family:monospace;
+        }
+    </style>
+    <body id="body">
+        <header id="header">
+            <!-- Main header of the page -->
+            <img src="D:\web_programming_assessment_2\Game_logo.png" alt="Logo" class="logo">
+            <div class="menu">
+                <!-- Menu items with links -->
+                <a href="index.html">Home</a>
+                <a href="Key information page 2.html">Key Information</a>
+                <a href="characters page 2.html">Characters</a>
+                <a href="Reviews page 2.html">Reviews</a>
+                <a href="Tevyat.html">Tevyat</a>
+            </div>
+            <!--Download button link-->
+            <div><a class="a" href="https://genshin.hoyoverse.com/en/home">Download</a></div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <!-- Section for Key information -->
+        <h2 id="h2">Game Features</h2>
+        <section id="section">
+            <!--This piece of code adds the video and its description on the right side of the page using <aside> tag and CSS-->
+            <aside class="aside1">
+            <h3 class="h3">MASSIVE OPEN WORLD</h3>
+            <div class="p">    
+            <p>
+                Climb any mountain, swim across any river, and glide over the world below, taking in the jaw-dropping scenery each step of the way. And if you stop to investigate a wandering Seelie or strange mechanism, who knows what you might discover?
+            </p>
+            </div> 
+            </aside>
+                <video class="video_container_right" autoplay muted loop>
+                    <source src="open_world_vid.mp4" type="video/mp4" />
+                </video>
+        </section>
+        <section id="section">
+            <!--This piece of code adds the video and its description on the left side of the page using <aside> tag and CSS-->
+            <aside class="aside2">  
+            <h3 class="h3">ELEMENTAL COMBAT SYSTEM</h3>
+            <div class="p">
+                Harness the seven elements to unleash elemental reactions. Anemo, Electro, Hydro, Pyro, Cryo, Dendro, and Geo interact in all sorts of ways, and Vision wielders have the power to turn this to their advantage.
+                
+                Will you vaporize Hydro with Pyro, electro-charge it with Electro, or freeze it with Cryo? Your mastery of the elements will give you the upper hand in battle and exploration.
+            </div> 
+            </aside>
+            <video class="video_container_left" autoplay muted loop>
+                <source src="element_combat.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <section id="section">
+            <!--This piece of code adds the video and its description on the right side of the page using <aside> tag and CSS-->
+            <aside class="aside1">   
+            <h3 class="h3">BEAUTIFUL VISUALS</h3>
+            <div class="p">    
+            <p>
+                Feast your eyes on the world around you, with a stunning art style, real-time rendering, and finely tuned character animations delivering you a truly immersive visual experience. Lighting and weather all change naturally over time, bringing every detail of this world to life.
+            </p>
+            </div> 
+            </aside>
+            <video class="video_container_right" autoplay muted loop>
+                <source src="visuals.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <section id="section">
+            <!--This piece of code adds the video and its description on the left side of the page using <aside> tag and CSS-->
+            <aside class="aside2"> 
+            <h3 class="h3">BUILD YOUR DREAM TEAM</h3>
+            <div class="p">    
+            <p>
+                Team up with a diverse cast of characters in Teyvat, each with their own unique personalities, stories, and abilities. Discover your favorite party combinations and level up your characters to help you conquer even the most daunting of enemies and domains.
+            </p>
+            </div>
+            </aside>
+            <video class="video_container_left" autoplay muted loop>
+                <source src="build_your_team.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <section id="section">
+            <!--This piece of code adds the video and its description on the right side of the page using <aside> tag and CSS-->
+            <aside class="aside1">
+            <h3 class="h3">JOURNEY WITH FRIENDS</h3>
+            <div class="p">    
+            <p>
+                Team up with friends across various platforms to trigger more elemental action, tackle tricky boss fights, and conquer challenging domains together to reap rich rewards.
+                
+                As you stand atop the peaks of Jueyun Karst and take in the rolling clouds and vast terrain stretching out before you, you may wish to stay in Teyvat a little longer... But until you are reunited with your lost sibling, how can you rest? Go forth, Traveler, and begin your adventure!
+            </p>
+            </div>
+            </aside>
+            <video class="video_container_right" autoplay muted loop>
+                <source src="Genshin Impact Coop.mp4" type="video/mp4" />
+            </video>
+        </section>
+</body>
+<!-- code for footer of the page-->
+<footer>
+    <div class="tw"><label class="fab fa-twitter"></label></div>&nbsp
+    <div class="fb"><label class="fab fa-facebook"></label></div>&nbsp
+    <div class="ig"><label class="fab fa-instagram"></label></div>&nbsp
+    <br><br><br>
+    <a>Tallal Khan</a> 2020 Copyright © Genshin Impact 
+    <br><br>
+</footer>
+</html>
